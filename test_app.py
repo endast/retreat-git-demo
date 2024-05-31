@@ -7,7 +7,6 @@ from rich.color import Color
     "name",
     [
         "Marie Curie",
-        "Örjan Larsson",
         "Alfred Nobel",
         "Charles Darwin",
         "Ada Lovelace",
