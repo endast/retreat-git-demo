@@ -6,13 +6,13 @@ from rich.color import Color
 @pytest.mark.parametrize(
     "name",
     [
-        ("Marie Curie",),
-        ("Örjan Larsson",),
-        ("Alfred Nobel",),
-        ("Charles Darwin"),
-        ("Ada Lovelace",),
-        ("Albert Einstein",),
-        ("Jane Goodall"),
+        "Marie Curie",
+        "Örjan Larsson",
+        "Alfred Nobel",
+        "Charles Darwin",
+        "Ada Lovelace",
+        "Albert Einstein",
+        "Jane Goodall",
     ],
 )
 def test_random_emoji(name):
