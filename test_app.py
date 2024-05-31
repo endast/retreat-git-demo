@@ -4,21 +4,19 @@ from rich.color import Color
 
 
 @pytest.mark.parametrize(
-    "name",
+    "name, expected_first",
     [
-        ("Marie Curie",),
-        ("Alfred Nobel",),
-        ("Charles Darwin"),
-        ("Ada Lovelace",),
-        ("Albert Einstein",),
-        ("Jane Goodall"),
+        ("Marie Curie","m"),
+        ("Alfred Nobel","a"),
+        ("Charles Darwin","c"),
+        ("Ada Lovelace","a"),
+        ("Albert Einstein","a"),
+        ("Jane Goodall","j"),
     ],
 )
-def test_random_emoji(name):
-    name = "Magnus"
+def test_random_emoji(name, expected_first):
     random_greeting = demo_app.random_emoji(name=name)
-    expected_start = name[0].lower()
-    assert random_greeting[0] == expected_start
+    assert random_greeting[0] == expected_first
 
 
 def test_random_color():
@@ -38,7 +36,7 @@ def test_greeting_shout():
 
 
 @pytest.mark.parametrize(
-    "name,shout",
+    "name, shout",
     [
         ("Marie Curie", True),
         ("Alfred Nobel", True),
