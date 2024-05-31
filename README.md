@@ -1,16 +1,16 @@
-# retreat-git-demo
- 
+# retreat-git-demo 🦖
+
 Get a customized Emoji enchaced greeting.
 
 
 ## Install
 
 ```shell
-git clone repo_url
+git clone https://github.com/endast/retreat-git-demo
 cd retreat-demo-git
 python -m venv venv # Create a virtual env
 source venv/bin/activate
-pip install -r requirements.txt
+pip install -r requirements.txt # Install dependencies
 python demo_app.py
 ```
 
