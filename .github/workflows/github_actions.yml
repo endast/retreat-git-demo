@@ -3,7 +3,7 @@ name: Test demo app
 on: [push]
 
 jobs:
-  build:
+  run-tests:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
