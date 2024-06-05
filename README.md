@@ -21,3 +21,7 @@ Enter your name: Magnus Wahlberg
 Shout? [y/n]: n
 Hi Magnus Wahlberg 👨🏼
 ```
+
+
+## Github actions docs
+https://docs.github.com/en/actions
