@@ -6,8 +6,11 @@ from rich.prompt import Prompt, Confirm
 
 
 def random_emoji(name):
-    available_emojies = [e for e in EMOJI if e[0] == name.lower()[0]]
-    return random.choice(available_emojies)
+    if available_emojies := [e for e in EMOJI if e[0] == name.lower()[0]]:
+        return random.choice(available_emojies)
+    else:
+        return "t-rex"
+
 
 
 def random_color():
