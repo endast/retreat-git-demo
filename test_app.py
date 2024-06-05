@@ -12,6 +12,7 @@ from rich.color import Color
         ("Ada Lovelace","a"),
         ("Albert Einstein","a"),
         ("Jane Goodall","j"),
+        ("Örjan Larsson","t"),
     ],
 )
 def test_random_emoji(name, expected_first):
